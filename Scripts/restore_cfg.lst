@@ -1,4 +1,3 @@
-N|Y|${HOME}|.zshrc .p10k.zsh|zsh oh-my-zsh-git zsh-theme-powerlevel10k pokemon-colorscripts-git
 Y|Y|${HOME}/.config/Code/User|settings.json|visual-studio-code-bin
 Y|Y|${HOME}/.config|dunst|dunst
 Y|Y|${HOME}/.config|fish|fish
@@ -9,8 +8,6 @@ Y|Y|${HOME}/.config/hyprdots|theme.ctl scripts wallbash|hyprland
 Y|Y|${HOME}/.config|kitty|kitty
 Y|Y|${HOME}/.config|Kvantum|kvantum
 Y|Y|${HOME}/.config|lsd|lsd
-Y|Y|${HOME}/.config|MangoHud|mangohud
-Y|Y|${HOME}/.config|neofetch|neofetch
 Y|Y|${HOME}/.config|qt5ct|qt5ct
 Y|Y|${HOME}/.config|qt6ct|qt6ct
 Y|Y|${HOME}/.config|rofi|rofi
