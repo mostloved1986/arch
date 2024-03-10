@@ -8,20 +8,12 @@ gst-plugin-pipewire                                    # pipewire gstreamer clie
 wireplumber                                            # pipewire session manager
 pavucontrol                                            # pulseaudio volume control
 pamixer                                                # pulseaudio cli mixer
-networkmanager                                         # network manager
 network-manager-applet                                 # network manager system tray utility
-bluez                                                  # bluetooth protocol stack
-bluez-utils                                            # bluetooth utility cli
-blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 
 
 # --------------------------------------------------- // Display Manager
 sddm                                                   # display manager for KDE plasma
-qt5-quickcontrols                                      # for sddm theme ui elements
-qt5-quickcontrols2                                     # for sddm theme ui elements
-qt5-graphicaleffects                                   # for sddm theme effects
-
 
 # --------------------------------------------------- // Window Manager
 hyprland                                               # wlroots-based wayland compositor
@@ -65,14 +57,11 @@ firefox                                                # browser
 kitty                                                  # terminal
 dolphin                                                # kde file manager
 ark                                                    # kde file archiver
-vim                                                    # terminal text editor
 visual-studio-code-bin                                 # ide text editor
-
+btop
+tmux
 
 # --------------------------------------------------- // Shell
-eza|zsh                                                # file lister for zsh
-oh-my-zsh-git|zsh                                      # plugin manager for zsh
-zsh-theme-powerlevel10k|zsh oh-my-zsh-git              # theme for zsh
 lsd|fish                                               # file lister for fish
 starship|fish                                          # customizable shell prompt
 neofetch                                               # fetch tool
