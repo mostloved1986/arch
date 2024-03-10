@@ -179,21 +179,3 @@ EOF
 fi
 
 
-#------------------------#
-# enable system services #
-#------------------------#
-if [ $flg_Service -eq 1 ]; then
-    cat <<"EOF"
-
-                 _             
- ___ ___ ___ _ _|_|___ ___ ___ 
-|_ -| -_|  _| | | |  _| -_|_ -|
-|___|___|_|  \_/|_|___|___|___|
-
-EOF
-
-    while read service ; do
-        service_ctl $service
-    done < system_ctl.lst
-fi
-
