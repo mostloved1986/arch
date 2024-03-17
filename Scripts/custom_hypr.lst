@@ -57,16 +57,20 @@ kitty                                                  # terminal
 dolphin                                                # kde file manager
 ark                                                    # kde file archiver
 visual-studio-code-bin                                 # ide text editor
-btop
-tmux
+btop                                                   # system monitor
+tmux                                                   # tmux
+steam                                                  # game
+spotify                                                # spotify
+spicetify-cli                                          # theme for spotify
+cava                                                   # cava
+rog-control-center                                     # ASUS ROG
+asusctl                                                # ASUS ROG
+ranger                                                 # browser files terminal
 
 # --------------------------------------------------- // Shell
 lsd|fish                                               # file lister for fish
 starship|fish                                          # customizable shell prompt
 neofetch                                               # fetch tool
-pokemon-colorscripts-git|zsh                           # display pokemon sprites
-
-
 # --------------------------------------------------- // Hyprdots
 hyprdots-ctl                                           # cli tool to manage hyprdots
 
