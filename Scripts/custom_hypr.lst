@@ -63,9 +63,6 @@ steam                                                  # game
 spotify                                                # spotify
 spicetify-cli                                          # theme for spotify
 cava                                                   # cava
-rog-control-center                                     # ASUS ROG
-asusctl                                                # ASUS ROG
-ranger                                                 # browser files terminal
 
 # --------------------------------------------------- // Shell
 lsd|fish                                               # file lister for fish
