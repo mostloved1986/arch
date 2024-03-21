@@ -4,9 +4,10 @@
 #|-/ /--| Prasanth Rangan                      |-/ /--|#
 #|/ /---+--------------------------------------+/ /---|#
 
-source global_fn.sh
+scrDir=$(dirname "$(realpath "$0")")
+source "${scrDir}/global_fn.sh"
 if [ $? -ne 0 ] ; then
-    echo "Error: unable to source global_fn.sh, please execute from $(dirname "$(realpath "$0")")..."
+        echo "Error: unable to source global_fn.sh..."
     exit 1
 fi
 
@@ -31,5 +32,5 @@ fi
 
 
 # shell
-./restore_shl.sh ${getShell}
+"${scrDir}/restore_shl.sh"
 
