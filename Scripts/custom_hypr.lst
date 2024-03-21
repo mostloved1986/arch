@@ -67,5 +67,5 @@ lsd|fish                                               # file lister for fish
 starship|fish                                          # customizable shell prompt
 neofetch                                               # fetch tool
 # --------------------------------------------------- // Hyprdots
-hyprdots-ctl                                           # cli tool to manage hyprdots
+hyprdots-ctl-git                                           # cli tool to manage hyprdots
 
