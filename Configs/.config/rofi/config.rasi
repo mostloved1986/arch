@@ -18,7 +18,7 @@ configuration {
 // Main //
 window {
     height:                      590px;
-    width:                       1140px;
+    width:                       1050px;
     transparency:                "real";
     fullscreen:                  false;
     enabled:                     true;
@@ -28,62 +28,39 @@ window {
     border:                      2px;
     border-radius:               40px;
     border-color:                @main-br;
-    background-color:            transparent;
+    background-color:            @main-bg;
 }
 mainbox {
     enabled:                     true;
-    spacing:                     0px;
+    spacing:                     20px;
+    padding:                     10px;
     orientation:                 horizontal;
-    children:                    [  "inputbar" , "listbox" ];
+    children:                    [ "inputbar" , "listbox" ];
     background-color:            transparent;
-    background-image:            url("~/.config/swww/wall.blur", height);
 }
 
 
 // Inputs //
 inputbar {
     enabled:                     true;
-    width:                       640px;
-    children:                    [ "mode-switcher" , "entry" ];
+    width:                       560px;
+    spacing:                     0px;
+    padding:                     0px;
+    children:                    [ "entry" ];
     background-color:            transparent;
-    background-image:            url("~/.config/swww/wall.rofi", height);
+    background-image:            url("~/.config/swww/wall.thmb", height);
 }
 entry {
     enabled:                     false;
 }
 
 
-// Modes //
-mode-switcher{
-    orientation:                 vertical;
-    enabled:                     true;
-    spacing:                     0px;
-    width:                       68px;
-    padding:                     160px 10px 160px 10px;
-    spacing:                     25px;
-    background-color:            transparent;
-    background-image:            url("~/.config/swww/wall.blur", height);
-}
-button {
-    cursor:                      pointer;
-    vertical-align:              0.50;
-    horizontal-align:            0.45;
-    border-radius:               50px;
-    background-color:            @main-bg;
-    text-color:                  @main-fg;
-}
-button selected {
-    background-color:            @main-fg;
-    text-color:                  @main-bg;
-}
-
-
 // Lists //
 listbox {
     spacing:                     10px;
-    padding:                     30px;
+    padding:                     20px;
     children:                    [ "listview" ];
-    background-color:            @main-bg;
+    background-color:            transparent;
 }
 listview {
     enabled:                     true;
