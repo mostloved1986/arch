@@ -6,9 +6,11 @@ ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/globalcontrol.sh
 roconf="~/.config/rofi/quickapps.rasi"
 
-if [ $# -ge 1 ] ; then
-    dockWidth=$(( (70 * $#) - $# ))
+if [ $# -eq 0 ] ; then
+    echo "usage: ./quickapps.sh <app1> <app2> ... <app[n]>"
+    exit 1
 else
+    appCount="$#"
     echo "usage: ./quickapps.sh <app1> <app2> ... <app[n]>"
     exit 1
 fi
@@ -48,13 +50,13 @@ if [ ! -z $x_rofi ] || [ ! -z $y_rofi ] ; then
     pos="window {location: $y_rofi $x_rofi; $x_offset $y_offset}"
 fi
 
+# override rofi
 
-# read hypr theme border
-
+dockHeight=$(( x_mon * 3 / 100))
+dockWidth=$(( dockHeight * appCount ))
+iconSize=$(( dockHeight - 4 ))
 wind_border=$(( hypr_border * 3/2 ))
-elem_border=`[ $hypr_border -eq 0 ] && echo "5" || echo $hypr_border`
-r_override="window{width:$dockWidth;border-radius:${wind_border}px;} listview{columns:$#;} element{border-radius:${elem_border}px;}"
-
+r_override="window{height:${dockHeight};width:${dockWidth};border-radius:${wind_border}px;} listview{columns:${appCount};} element{border-radius:${wind_border}px;} element-icon{size:${iconSize}px;}"
 
 # launch rofi menu
 
