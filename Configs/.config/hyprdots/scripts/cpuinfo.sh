@@ -1,4 +1,5 @@
-#!/usr/bin/env sh
+!/usr/bin/env bash
+# shellcheck disable=SC2312
 
 # CPU model
 model=$(cat /proc/cpuinfo | grep 'model name' | head -n 1 | awk -F ': ' '{print $2}')
